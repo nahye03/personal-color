@@ -1,0 +1,1 @@
+FlowRouter.template('/community', 'community');
