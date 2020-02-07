@@ -1,0 +1,1 @@
+FlowRouter.template('/recommend_1', 'recommend_1');
