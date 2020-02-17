@@ -15,3 +15,5 @@ Meteor.startup(function() {
   }
 });
 
+//서버 시작할때 한번 시작
+//if 디비에 내용이 없으면 생성한다
