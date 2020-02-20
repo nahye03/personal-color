@@ -4,16 +4,20 @@
         <br>
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
             <h2 class="font-weight-normal"><span style="color:deepskyblue">{{currentUser.username}}</span>님의 퍼스널 컬러는</h2>
-            <h1 class="display-4 font-weight-normal my-3">{{userTone}} 톤</h1>
+            <h1 class="display-4 font-weight-normal my-3">톤</h1>
         </div>
 
         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
             <div class="chan-color mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                 <div class="bg-light shadow-sm mx-auto up-round-box product-image"></div>
                 <div class="my-3 py-3">
-<!--                    <a class="button" onclick="changeColor(0)">RED</a>-->
-<!--                    <p class="button" onclick="changeColor(1)">PURPLE</p>-->
-                    <button id="btn-chan">BLUE</button>
+                    {{#each toneInfo}}
+                        <h2>{{ton_color}}</h2>
+<!--                    <button style="background-color: {{ton_color}}" id="btn-chan1">BLUE</button>-->
+
+                    {{/each}}
+<!--                    <button id="btn-chan2">BLUE</button>-->
+<!--                    <button id="btn-chan3">BLUE</button>-->
 
                     <h2 class="display-5">Another headline</h2>
                     <p class="lead">And an even wittier subheading.</p>

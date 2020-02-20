@@ -56,7 +56,7 @@ Meteor.startup(function () {
             '섀도우는 최대한 생략!',
             '섀도우는 최대한 생략하되, 옅은 음영 섀도우로 포인트'
         ],
-        ton_color: []
+        ton_color: ['#FCF3B2','#FBD3D4','#BBE5F5']
     });
     DB_TONE.insert({
         ton_tone: '봄 브라이트',
@@ -99,7 +99,7 @@ Meteor.startup(function () {
             '최대한 옅은 색감과 적은 펄로 깔끔하게',
             '선명하고 깔끔한 아이라인으로 아이 메이크업에 포인트'
         ],
-        ton_color: []
+        ton_color: ['#FAD958','#F07182','#D7E47B']
     });
     DB_TONE.insert({
         ton_tone: '겨울 브라이트',
@@ -141,7 +141,7 @@ Meteor.startup(function () {
             '섀도우는 쿨 그레이!',
             '쿨그레이로 아이메이크업하기'
         ],
-        ton_color: []
+        ton_color: ['#2B358C','#EC1864','#822C91']
     });
     DB_TONE.insert({
         ton_tone: '겨울 딥',
@@ -182,7 +182,7 @@ Meteor.startup(function () {
             '섀도우는 쿨베이지!',
             '쿨한 베이지로 눈가에 포인트'
         ],
-        ton_color: []
+        ton_color: ['#3C1A56','#B41E3B','#671D5C']
     });
     DB_TONE.insert({
         ton_tone: '가을 뮤트',
@@ -222,7 +222,7 @@ Meteor.startup(function () {
             '섀도우는 카멜, 베이지로 음영',
             '베이지 컬러는 넓은 영역, 카멜 컬러는 포인트'
         ],
-        ton_color: []
+        ton_color: ['#668158','#A29769','#C14D60']
     });
     DB_TONE.insert({
         ton_tone: '가을 딥',
@@ -263,7 +263,7 @@ Meteor.startup(function () {
             '섀도우는 글리터!',
             '카멜브라운 글리터와 매트 섀도우 잘 섞어서 사용'
         ],
-        ton_color: []
+        ton_color: ['#901943','#1D5D43','#572E2C']
     });
     DB_TONE.insert({
         ton_tone: '여름 라이트',
@@ -307,7 +307,7 @@ Meteor.startup(function () {
             '아이 메이크업은 래시와 라인 강조!',
             '블랙 마스카라와 붓펜 아이라이너로 눈매 강조하기'
         ],
-        ton_color: []
+        ton_color: ['#EC618A','#DA83B6','#BBE5F3']
     });
     DB_TONE.insert({
         ton_tone: '여름 뮤트',
@@ -349,7 +349,7 @@ Meteor.startup(function () {
             '섀도우는 그레이 베이지로 삼각존 채우기!',
             '그레이 베이지 컬러 섀도우로 삼각존을 채워 가볍게 눈매 교정'
         ],
-        ton_color: []
+        ton_color: ['#CE588A','#AB90B3','#7CBBDA']
     });
 
     //봄 라이트
