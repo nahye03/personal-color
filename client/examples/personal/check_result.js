@@ -7,3 +7,17 @@ Template.ex_login_custom.helpers({
         return DB_TONE.find().skip(skipsize).limit();
     }
 });
+
+// Meteor.methods({
+//     changeColor : function(number){
+//         var circle = document.getElementsByClassName('chan-color');
+//         var colorarr = ['red','purple','blue']
+//         circle.style.background=colorarr[number]
+//     }
+// })
+
+Template.check_result.events({
+    'click #btn-chan' :  function (evt) {
+        $(evt.target).closest('.chan-color').css({"background-color":"RED"})
+    }
+})
