@@ -17,6 +17,7 @@ Meteor.startup(function () {
     DB_TONE.remove({});
     DB_COSM.remove({});
     DB_TONE.insert({
+        ton_num : 1,
         ton_tone: '봄 라이트',
         ton_feature: [
             '눈화장은 최대한 옅게, 투명한 느낌이 들 정도로',
@@ -59,6 +60,7 @@ Meteor.startup(function () {
         ton_color: ['#FCF3B2','#FBD3D4','#BBE5F5']
     });
     DB_TONE.insert({
+        ton_num : 2,
         ton_tone: '봄 브라이트',
         ton_feature: [
             '립 컬러는 옅은 색보다 진한 색이 더 예쁨',
@@ -102,6 +104,7 @@ Meteor.startup(function () {
         ton_color: ['#FAD958','#F07182','#D7E47B']
     });
     DB_TONE.insert({
+        ton_num :7,
         ton_tone: '겨울 브라이트',
         ton_feature: [
             '쿨 베이스의 고채도 컬러',
@@ -144,6 +147,7 @@ Meteor.startup(function () {
         ton_color: ['#2B358C','#EC1864','#822C91']
     });
     DB_TONE.insert({
+        ton_num : 8,
         ton_tone: '겨울 딥',
         ton_feature: [
             '푸른기가 도는 흑발',
@@ -185,13 +189,16 @@ Meteor.startup(function () {
         ton_color: ['#3C1A56','#B41E3B','#671D5C']
     });
     DB_TONE.insert({
+        ton_num : 5,
         ton_tone: '가을 뮤트',
         ton_feature: [
+            '다른 명칭으로는 가을 소프트',
             '정적이고 우아한 이미지',
             '베이지, 브라운 등 뉴트럴 톤이 찰떡궁합',
             '저채도 컬러는 완전 착붙 컬러!',
             '코랄, 그중에서도 오렌지빛 핑크립',
-            '마호가니, 카멜, 카키, 브론즈 컬러와 함께라면 무적'
+            '마호가니, 카멜, 카키, 브론즈 컬러와 함께라면 무적',
+            '웜, 쿨이 긴가민가하다면? 가을 뮤트일 가능성 높음'
         ],
         ton_best: [
             '초코브라운, 애쉬 컬러 헤어',
@@ -225,8 +232,10 @@ Meteor.startup(function () {
         ton_color: ['#668158','#A29769','#C14D60']
     });
     DB_TONE.insert({
+        ton_num :6,
         ton_tone: '가을 딥',
         ton_feature: [
+            '다른 명칭으로는 가을 다크',
             '채도가 생명인 톤! 저채도, 저명도 컬러',
             '짙은 메이크업을 완벽하게 소화',
             '눈화장으로 팔색조 매력 어필 가능',
@@ -266,9 +275,10 @@ Meteor.startup(function () {
         ton_color: ['#901943','#1D5D43','#572E2C']
     });
     DB_TONE.insert({
+        ton_num : 3,
         ton_tone: '여름 라이트',
         ton_feature: [
-            '고명도의 컬러가 잘 어울립',
+            '고명도의 컬러가 잘 어울림',
             '딸기우유 컬러를 소화해내는 능력',
             '그레이시한 느낌의 파스텔 돈이 BEST',
             '직선적인 느낌의 헤어 쉐입과 버진모에 가까운 블랙 컬러',
@@ -310,13 +320,16 @@ Meteor.startup(function () {
         ton_color: ['#EC618A','#DA83B6','#BBE5F3']
     });
     DB_TONE.insert({
+        ton_num :4,
         ton_tone: '여름 뮤트',
         ton_feature: [
             '푸른기 도는 MLBB가 찰떡콩떡!',
             '눈이 시린 화이트보다 그레이톤의 화이트나 크림 컬러가 GOOD',
             '어떤 색이든 회색을 끼얹으션 소화 가능',
             '그레이를 위한, 그레이에 의한 타입',
-            '명도에 따라 베스트 컬러 개인차가 큰 편'
+            '명도에 따라 베스트 컬러 개인차가 큰 편',
+            '다른 명칭으로는 여름 소프트',
+            '가장 많은 연구를 필요로 하는 타입'
         ],
         ton_best: [
             '차분한 스타일링',
