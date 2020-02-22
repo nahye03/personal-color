@@ -11,11 +11,11 @@
             <div class="chan-color mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                 <div class="bg-light shadow-sm mx-auto up-round-box product-image"></div>
                 <div class="my-3 py-3">
-                    {{#each toneInfo}}
-                        <h2>{{ton_color}}</h2>
+                    {{#with toneInfo}}
+                        <h2>톤: {{toneInfo.ton_color}}</h2>
 <!--                    <button style="background-color: {{ton_color}}" id="btn-chan1">BLUE</button>-->
 
-                    {{/each}}
+                    {{/with}}
 <!--                    <button id="btn-chan2">BLUE</button>-->
 <!--                    <button id="btn-chan3">BLUE</button>-->
 

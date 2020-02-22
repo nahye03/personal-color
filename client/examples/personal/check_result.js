@@ -6,8 +6,8 @@ Template.ex_login_custom.helpers({
     //     var skipsize = Math.floor(Math.random() * totalCount);
     //     return DB_TONE.find().skip(skipsize).limit();
     // },
-    toneInfo : function () {
-        return DB_TONE.findOne({ton_tone:'여름 뮤트'})
+    toneInfo: function() {
+        return DB_TONE.findOne({ton_tone: '여름 뮤트'});
     }
     
 });
