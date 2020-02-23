@@ -1,7 +1,8 @@
 FlowRouter.template('/header', 'header');
 
-Template.header.helpers({
-    userInfo: function() {
-        return Meteor.user();
+
+Template.header.events({
+    'click #btn-mypage': function(evt) {
+        alert("로그인 해주세요!")
     }
-});
+})

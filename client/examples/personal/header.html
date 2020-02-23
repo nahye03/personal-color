@@ -15,8 +15,6 @@
                             <a class="p-2 text-dark" href="#">장바구니</a>
                             <a class="p-2 text-dark" href="#">구매내역</a>
                             <a class="btn btn-outline-primary btn-outline-dark" href="#">{{> loginButtons align="right"}}</a>
-<!--                            <a class="p-2 text-dark" href="/login">로그인</a>-->
-<!--                            <a class="p-2 text-dark" href="#">화원가입</a>-->
 
                         </div>
                     </div>
@@ -28,7 +26,12 @@
                         <a class="p-3 text-dark" href="/check_main">퍼스널 컬러 진단</a>
                         <a class="p-3 text-dark" href="/recommend_1">화장품 추천</a>
                         <a class="p-3 text-dark" href="/community">커뮤니티</a>
-                        <a class="p-3 text-dark" href="/mypage_info">내정보</a>
+                        {{#if currentUser}}
+                            <a class="p-3 text-dark" href="/mypage_info">내정보</a>
+                        {{else}}
+                            <button class="p-3 text-dark btn" id="btn-mypage">내정보</button>
+                        {{/if}}
+
                     </nav>
                 </div>
             </div>

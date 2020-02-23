@@ -1,4 +1,4 @@
-#check_result {
+#check_result_info {
   .position-relative {
     background-image: url("/examples/0010.jpeg");
     background-size:     cover;
@@ -124,9 +124,9 @@
 
   .makeup-list{
     list-style: none;
-    margin: 0px;
+    margin: 0px 0px 0px 30px;
     padding: 0px;
-    width: 100%;
+    width: 90%;
   }
   .makeup-list li{
     padding: 5px 0px 5px 5px;
@@ -149,11 +149,38 @@
     margin-right: 10px;
   }
 
+  .people-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .people-list li{
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+    font-size: 18px;
+  }
+  .people-list li:last-child{
+    border-bottom: 0px;
+  }
+  .people-list li:before{
+    content : '';
+    height: 25px;
+    width: 25px;
+    background-size: 25px;
+    background-image: url("/examples/famous.png");
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px 6px 0px;
+    margin-right: 10px;
+  }
 
 
 
 
-    //.container {
+
+  //.container {
   //  max-width: 960px;
   //}
 

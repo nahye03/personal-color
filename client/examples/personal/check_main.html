@@ -32,8 +32,13 @@
         </div>
 
         <div style="margin-top: 5%">
-            <a href="check_input" class="button btn btn-lg bnt-design">시작하기</a>
+            {{#if currentUser}}
+                <a href="check_input" class="button btn btn-lg bnt-design">시작하기</a>
+            {{else}}
+                <buttton id="btn-start" class="button btn btn-lg bnt-design">시작하기</buttton>
+            {{/if}}
         </div>
+
 
         {{>footer}}
 
