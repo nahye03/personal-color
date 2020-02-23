@@ -44,24 +44,85 @@
     padding: 0px;
     width: 100%;
   }
-
   .feat-list li{
     padding: 5px 0px 5px 5px;
     margin-bottom: 5px;
     border-bottom: 1px solid #efefef;
     font-size: 18px;
   }
-
   .feat-list li:last-child{
     border-bottom: 0px;
   }
-
   .feat-list li:before{
-    content: "V";
+    content : '';
+    height: 25px;
+    width: 25px;
+    background-size: 25px;
+    background-image: url("/examples/check.png");
+    background-color: pink;
     display: inline-block;
     vertical-align: middle;
     padding: 0px 5px 6px 0px;
+    margin-right: 10px;
   }
+
+  .best-list{
+    list-style: none;
+    margin: 0px 0px 0px 90px;
+    padding: 0px;
+    width: 60%;
+  }
+  .best-list li{
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+    font-size: 18px;
+  }
+  .best-list li:last-child{
+    border-bottom: 0px;
+  }
+  .best-list li:before{
+    content : '';
+    height: 25px;
+    width: 25px;
+    background-size: 25px;
+    background-image: url("/examples/thumbs-up.png");
+    //background-color: pink;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px 6px 0px;
+    margin-right: 10px;
+  }
+
+  .worst-list{
+    list-style: none;
+    margin: 0px 0px 0px 90px;
+    padding: 0px;
+    width: 60%;
+  }
+  .worst-list li{
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+    font-size: 18px;
+  }
+  .worst-list li:last-child{
+    border-bottom: 0px;
+  }
+  .worst-list li:before{
+    content : '';
+    height: 25px;
+    width: 25px;
+    background-size: 25px;
+    background-image: url("/examples/thumb-down.png");
+    //background-color: pink;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px 6px 0px;
+    margin-right: 10px;
+  }
+
+
 
 
 
