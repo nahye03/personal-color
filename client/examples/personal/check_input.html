@@ -2,25 +2,35 @@
     <div id="check_input">
 
         {{> header}}
-        <span1>사진을 입력해주세요</span1><br>
-
-        <div class="row" style="margin-top:5% ;margin-left:10%; margin-right:10%" >
+        <span1>사진을 입력해주세요</span1>
+        <br>
+        <div class="row" style="margin-top:5% ;margin-left:10%; margin-right:10%">
             <div class="col-md-6" align="center">
-<!--                <button class="btn " id="btn-camera" type="button" href="cam"><img class="btn-img" src="examples/woman.png">-->
-<!--                    </button>-->
-                <input type="file" id="inp-file"/>
-                <img id="btn-camera" src="examples/woman.png">
-                {{> cam}}
 
+                <br><input type="file" id="inp-file"/>
+                <a id="btn-save" href="#" class="btn btn-primary">업로드</a>
+                <!--  이 사진 랜덤으로 만들어야지   -->
+                <img id="btn-camera" src="examples/woman (5).png">
+
+                <!--  대표님 질문1. 이거 한개만 불러오게끔 Q2.접속할때마 DB 리셋되게끔
+                 -->
+                {{#each contents}}
+                    <img src="{{link}}" id="image_input">
+                {{/each}}
             </div>
+
             <div class="col-md-6 explain">
                 <div>
                     <ul>
                         <br><br><br>
-                        <li>얼굴이 정면을 바라보도록 사진을 찍거나 업로드해주세요</li><br>
-                        <li>가능한 화장을 지운채 진단하세요</li><br>
-                        <li>밝은곳에서 촬영해주세요</li><br>
-                        <li>최대한 얼굴만 나오도록 촬영헤주세요</li><br>
+                        <li>얼굴이 정면을 바라보도록 사진을 찍거나 업로드해주세요</li>
+                        <br>
+                        <li>가능한 화장을 지운채 진단하세요</li>
+                        <br>
+                        <li>밝은곳에서 촬영해주세요</li>
+                        <br>
+                        <li>최대한 얼굴만 나오도록 촬영헤주세요</li>
+                        <br>
                         <li>안경은 착용해도 상관은 없지만 되도록이면 벗어주세요</li>
                     </ul>
                     <br><br>

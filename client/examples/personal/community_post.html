@@ -1,6 +1,7 @@
 <template name="community_post">
-  {{> ex_navbar}}
-  {{#with board}}
+    {{> header}}
+
+    {{#with board}}
     <div id="community_post" class="container">
       <section class="jumbotron mt-4" style="background-color: white; border-radius: 25px; border: 2px solid rgba(128,128,128,0.71); padding: 20px;">
         <a href="/community_posting/{{_id}}" style="float:right;">수정</a>
@@ -17,5 +18,5 @@
 
     </div>
   {{/with}}
-  {{> ex_footer}}
+  {{> footer}}
 </template>
