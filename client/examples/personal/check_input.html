@@ -2,11 +2,16 @@
     <div id="check_input">
 
         {{> header}}
-        <span1>사진을 입력하거나, 촬영해주세요</span1><br>
+        <span1>사진을 입력해주세요</span1><br>
 
         <div class="row" style="margin-top:5% ;margin-left:10%; margin-right:10%" >
             <div class="col-md-6" align="center">
-                <button class="btn " id="btn-camera" type="button"><img class="btn-img" src="examples/woman.png"></button>
+<!--                <button class="btn " id="btn-camera" type="button" href="cam"><img class="btn-img" src="examples/woman.png">-->
+<!--                    </button>-->
+                <input type="file" id="inp-file"/>
+                <img id="btn-camera" src="examples/woman.png">
+                {{> cam}}
+
             </div>
             <div class="col-md-6 explain">
                 <div>
