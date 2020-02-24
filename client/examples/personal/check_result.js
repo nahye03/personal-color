@@ -2,6 +2,11 @@ FlowRouter.template('/check_result', 'check_result');
 
 var ran_ton = Math.floor(Math.random() * 8) + 1;
 
+Template.check_result_info.onRendered(function () {
+
+
+})
+
 Template.check_result_info.helpers({
     toneInfo: function() {
         return DB_TONE.findOne({ton_num: ran_ton});
