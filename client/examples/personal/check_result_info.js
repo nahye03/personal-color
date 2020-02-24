@@ -9,15 +9,6 @@ Template.check_result_info.helpers({
 
 });
 
-Meteor.methods({
-    feature_li : function (ton_feat) {
-        for(var i=0;i>ton_feat.length;i++){
-
-        }
-    }
-
-})
-
 Template.check_result_info.events({
     'click #btn-chan1' :  function (evt) {
         var ton = DB_TONE.findOne({ton_num:ran_ton}).ton_color
