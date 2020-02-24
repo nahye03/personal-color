@@ -4,6 +4,7 @@ Template.community.onRendered(function () {
 
 });
 
+
 Template.community.helpers({
     boards: function () {
         return DB_POSTS.findAll({}, {sort: {createdAt: -1}});
@@ -22,5 +23,8 @@ Template.community.events({
             DB_POSTS.remove({_id: this._id});
             alert('삭제 되었습니다.');
         }
+    },
+    'click #btn-num' : function () {
+
     }
 });

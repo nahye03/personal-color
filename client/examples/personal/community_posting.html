@@ -1,14 +1,15 @@
 <template name="community_posting">
     <div id="community_posting">
+        {{> header}}
         <section class="jumbotron" style="background-color: white;">
             <div class="container">
-                <h1 class="text-center">게시판 작성 페이지</h1>
+                <h1 class="text-center">게시판 작성</h1>
                 <p>
                 </p>
                 {{#with post}}
                     <div class="row text-center">
                         <div class="input-group mb-3 col-md-3">
-                            <input class="form-control" value="{{name}}" type="text" id="inp-name" placeholder="작성자"/>
+                            <input class="form-control" value="{{currentUser.username}}" type="text" id="inp-name" placeholder="작성자"/>
                         </div>
 
                         <div class="input-group mb-3 col-md-7">
@@ -18,7 +19,7 @@
                         <div class="input-group mb-3 col-md-2">
 
                             <select name="tone" id="inp-tone" value="{{tone}}">
-                                <option value="">DEFAULT</option>
+                                <option value="">TONE 선택</option>
                                 <option value="봄">봄</option>
                                 <option value="여름">여름</option>
                                 <option value="가을">가을</option>
@@ -35,5 +36,6 @@
                 </p>
             </div>
         </section>
+        {{>footer}}
     </div>
 </template>
