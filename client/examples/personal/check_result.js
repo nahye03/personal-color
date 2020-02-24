@@ -6,20 +6,19 @@ Template.check_result_info.helpers({
     toneInfo: function() {
         return DB_TONE.findOne({ton_num: ran_ton});
     }
-
 });
 
 Template.check_result_info.events({
     'click #btn-chan1' :  function (evt) {
         var ton = DB_TONE.findOne({ton_num:ran_ton}).ton_color
-        $(evt.target).closest('.chan-color').css({"background-color":ton[0]})
+        $(evt.target).closest('.chan-color').css({"background-color":ton[0], "border-color":ton[0]})
     },
     'click #btn-chan2' :  function (evt) {
         var ton = DB_TONE.findOne({ton_num:ran_ton}).ton_color
-        $(evt.target).closest('.chan-color').css({"background-color":ton[1]})
+        $(evt.target).closest('.chan-color').css({"background-color":ton[1], "border-color":ton[1]})
     },
     'click #btn-chan3' :  function (evt) {
         var ton = DB_TONE.findOne({ton_num:ran_ton}).ton_color
-        $(evt.target).closest('.chan-color').css({"background-color":ton[2]})
+        $(evt.target).closest('.chan-color').css({"background-color":ton[2], "border-color":ton[2]})
     }
 })

@@ -1,0 +1,1 @@
+FlowRouter.template('/mypage_makeup_shadow', 'mypage_makeup_shadow');

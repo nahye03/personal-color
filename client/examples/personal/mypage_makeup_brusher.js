@@ -1,0 +1,1 @@
+FlowRouter.template('/mypage_makeup_brusher', 'mypage_makeup_brusher');
