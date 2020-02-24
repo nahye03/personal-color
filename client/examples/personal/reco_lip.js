@@ -1,0 +1,1 @@
+FlowRouter.template('/reco_lip', 'reco_lip');

@@ -1,0 +1,1 @@
+FlowRouter.template('/reco_shadow', 'reco_shadow');

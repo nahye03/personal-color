@@ -1,0 +1,1 @@
+FlowRouter.template('/reco_base', 'reco_base');
