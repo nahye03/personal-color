@@ -508,7 +508,7 @@ Meteor.startup(function () {
         cm_name: '맥_트룰리에버래스팅',
         cm_cost: '22000',
         cm_tone: '봄 브라이트',
-        cm_class: '',
+        cm_class: 'lip',
     });
     DB_COSM.insert({
         cm_name: '맥_허니러스트',
@@ -584,7 +584,7 @@ Meteor.startup(function () {
     });
     DB_COSM.insert({
         cm_name: '캔메이크_파우더치크 23호',
-        cm_cost: '',
+        cm_cost: '13000',
         cm_tone: '봄 브라이트',
         cm_class: 'blusher',
     });
@@ -1487,6 +1487,156 @@ Meteor.startup(function () {
         cm_tone: '겨울 딥',
         cm_class: 'shadow',
     });
+
+
+    //베이스
+    //봄 라이트
+    DB_COSM.insert({
+        cm_name: '지베르니_밀착 커버 파운데이션 02 옐로우스킨',
+        cm_cost: '16400',
+        cm_tone: '봄 라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에뛰드_더블래스팅 파운데이션 21호 아이보리',
+        cm_cost: '18000',
+        cm_tone: '봄 라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_더블웨어 파운데이션 1W1 본',
+        cm_cost: '69000',
+        cm_tone: '봄 라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_더블웨어 소프트 글로우 매트 쿠션 1W1 본',
+        cm_cost: '70000',
+        cm_tone: '봄 브라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_퓨처리스트 아쿠아 브릴리언스 커스텀 래디언스 쿠션 웜바닐라',
+        cm_cost: '88000',
+        cm_tone: '봄 브라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '바비브라운_스킨롱웨어 웨이트리스 파운데이션 웜 아이보리',
+        cm_cost: '67000',
+        cm_tone: '봄 브라이트',
+        cm_class: 'base',
+    });
+
+//여름
+    DB_COSM.insert({
+        cm_name: '에뛰드_더블래스팅 파운데이션 21호 라이트바닐라',
+        cm_cost: '18000',
+        cm_tone: '여름 라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_더블웨어 파운데이션 2C0 웜 바닐라',
+        cm_cost: '69000',
+        cm_tone: '여름 라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_더블웨어 소프트 글로우 매트 쿠션 2C0 쿨 바닐라',
+        cm_cost: '70000',
+        cm_tone: '여름 라이트',
+        cm_class: 'base',
+    });
+
+    DB_COSM.insert({
+        cm_name: '바비브라운_스킨롱웨어 웨이트리스 파운데이션 쿨 아이보리',
+        cm_cost: '67000',
+        cm_tone: '여름 뮤트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '바비브라운_세럼 쿠션 파운데이션 미디엄',
+        cm_cost: '99000',
+        cm_tone: '여름 뮤트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_퓨처리스트 아쿠아 브릴리언스 리퀴드 메이크업 쿨본',
+        cm_cost: '88000',
+        cm_tone: '여름 뮤트',
+        cm_class: 'base',
+    });
+
+//가을
+    DB_COSM.insert({
+        cm_name: '닥터자르트_더메이크업 04뉴트럴 미디엄',
+        cm_cost: '39000',
+        cm_tone: '가을 뮤트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '닥터자르트_리쥬비네이팅 뷰티 밤 2호 미디엄',
+        cm_cost: '23490',
+        cm_tone: '가을 뮤트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에뛰드_더블래스팅 파운데이션 23호 허니샌드',
+        cm_cost: '18000',
+        cm_tone: '가을 뮤트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_더블웨어 파운데이션 2W2 라탄',
+        cm_cost: '69000',
+        cm_tone: '가을 딥',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_더블웨어 쿠션 비비 올 데이 웨어 리퀴드 컴팩트 토니',
+        cm_cost: '69000',
+        cm_tone: '가을 딥',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '바비브라운_스킨롱웨어 웨이트리스 파운데이션 웜 샌드',
+        cm_cost: '67000',
+        cm_tone: '가을 딥',
+        cm_class: 'base',
+    });
+
+//겨울
+    DB_COSM.insert({
+        cm_name: '에뛰드_더블래스팅 파운데이션 19호 로지퓨어',
+        cm_cost: '18000',
+        cm_tone: '겨울 브라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_더블웨어 파운데이션 1C1 쿨본',
+        cm_cost: '69000',
+        cm_tone: '겨울 브라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '에스티로더_퓨처리스트 아쿠아 브릴리언스 커스텀 래디언스 쿠션 쿨본',
+        cm_cost: '88000',
+        cm_tone: '겨울 브라이트',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '바비브라운_스킨롱웨어 웨이트리스 파운데이션 포슬린',
+        cm_cost: '67000',
+        cm_tone: '겨울 딥',
+        cm_class: 'base',
+    });
+    DB_COSM.insert({
+        cm_name: '바비브라운_롱웨어 캡슐 쿠션 포슬린',
+        cm_cost: '69000',
+        cm_tone: '겨울 딥',
+        cm_class: 'base',
+    });
+
 
 });
 
