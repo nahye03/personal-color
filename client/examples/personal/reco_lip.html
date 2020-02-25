@@ -4,10 +4,11 @@
     {{>footer}}
 </template>
 
-<template name="reco_lip_info">
-    <div id="reco_lip_info" align="center" style="margin-top: 5%">
+<template name="reco_lip_info" >
+    <div id="reco_lip_info" style="margin-top: 5%; align:center" >
         {{#with toneInfo}}
-            <h2 class="display-4 font-weight-normal my-3"><span style="color: slateblue">"{{ton_tone}}"</span> 톤인 {{currentUser.username}} 님에게 어울리는 립제품</h2>
+            <h2 class="display-4 font-weight-normal my-3"><span style="color: slateblue">"{{ton_tone}}"</span>
+                톤인 {{currentUser.username}} 님에게 어울리는 립제품</h2>
         {{/with}}
     </div>
 
@@ -20,10 +21,22 @@
                         <div class="card-body">
                             <p class="card-text">{{cm_name}}</p>
                             <h6>가격: {{cm_cost}}</h6>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center" align="left">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">장바구니담기</button>
+<!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>-->
+                                    <div class="input-group">
+                                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                            <option selected>선택</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" onclick="location.href='/cart'">장바구니 담기</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -31,6 +44,10 @@
                 </div>
             {{/each}}
         </div>
+    </div>
+
+    <div style="margin-top: 2% " class="text-center">
+        <button id="btn-addcart" class="button btn btn-lg bnt-design2">전체담기 </button>
     </div>
 
 
