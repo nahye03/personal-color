@@ -1636,8 +1636,6 @@ Meteor.startup(function () {
         cm_tone: '겨울 딥',
         cm_class: 'base',
     });
-
-
 });
 
 
