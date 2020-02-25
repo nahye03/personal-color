@@ -30,7 +30,7 @@ Template.check_input.events({
     'click #btn-check': function (evt) {
         var userInfo = Meteor.user();
         var ran_ton = Math.floor(Math.random() * 8) + 1;
-        DB_UPLOAD.remove({});
+
         Meteor.users.update({_id: userInfo._id},{
             $set : {
                 'profile.p_ton' : ran_ton
