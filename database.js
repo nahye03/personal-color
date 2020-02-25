@@ -4,7 +4,8 @@
 DB_TONE = new Mongo.Collection('DB_TONE');
 // DB_POSTS = new Mongo.Collection('DB_POSTS');
 DB_COSM = new Mongo.Collection('DB_COSM');
-DB_UPLOAD = new Mongo.Collection('DB_UPLOAD');
+// DB_UPLOAD = new Mongo.Collection('DB_UPLOAD');
+DB_CART = new Mongo.Collection('DB_CART');
 
 // Meteor.users.allow({  //client에서 사용자 정보를 제어 할 수 있도록 추가.
 //     update: function() {return true;},

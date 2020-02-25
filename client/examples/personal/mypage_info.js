@@ -56,7 +56,7 @@ Template.mypage_info.events({
         var username = $('#username').val();
         var p_name = $('#p_name').val();
         var p_birth = $('#p_birth').val();
-        // var p_email = $('#email').val();
+        var p_email = $('#email').val();
         var p_phone = $('#p_phone').val();
         var p_home = $('#p_home').val();
         var p_zip = $('#p_zip').val();
@@ -73,6 +73,5 @@ Template.mypage_info.events({
             }
         });
         alert('사용자 프로파일을 모두 수정 하였습니다.');
-    },
-
+    }
 })
