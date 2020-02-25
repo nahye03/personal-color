@@ -1,13 +1,14 @@
 FlowRouter.template('/community', 'community');
 
 Template.community.onRendered(function () {
+    Session.set('sortCondition',{createdAt: -1})
 
 });
 
 
 Template.community.helpers({
     boards: function () {
-        return DB_POSTS.findAll({}, {sort: {createdAt: -1}});
+        return DB_POSTS.findAll({}, {sort: Session.get('sortCondition')});
     },
     YMD: function () {
         return this.createdAt.toStringYMD();
@@ -24,7 +25,10 @@ Template.community.events({
             alert('삭제 되었습니다.');
         }
     },
-    'click #btn-num' : function () {
-
+    'click #btn-sort-count' : function () {
+        Session.set('sortCondition',{readCount:-1})
+    },
+    'click #btn-sort-date' : function () {
+        Session.set('sortCondition',{createdAt: -1})
     }
 });
