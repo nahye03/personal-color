@@ -2,13 +2,14 @@ FlowRouter.template('/community', 'community');
 
 Template.community.onRendered(function () {
     Session.set('sortCondition',{createdAt: -1})
+    Session.set('selTone', {})
 
 });
 
 
 Template.community.helpers({
     boards: function () {
-        return DB_POSTS.findAll({}, {sort: Session.get('sortCondition')});
+        return DB_POSTS.findAll(Session.get('selTone'), {sort: Session.get('sortCondition')});
     },
     YMD: function () {
         return this.createdAt.toStringYMD();
@@ -30,5 +31,20 @@ Template.community.events({
     },
     'click #btn-sort-date' : function () {
         Session.set('sortCondition',{createdAt: -1})
+    },
+    'click #btn-only-spring' : function () {
+        Session.set('selTone', {tone:'봄'})
+    },
+    'click #btn-only-summer' : function () {
+        Session.set('selTone', {tone:'여름'})
+    },
+    'click #btn-only-fall' : function () {
+        Session.set('selTone', {tone:'가을'})
+    },
+    'click #btn-only-winter' : function () {
+        Session.set('selTone', {tone:'겨울'})
+    },
+    'click #btn-only-all' : function () {
+        Session.set('selTone', {})
     }
 });
