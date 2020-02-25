@@ -66,7 +66,7 @@ Template.mypage_info.events({
                 'username': username,
                 'profile.p_name': p_name,
                 'profile.p_birth': p_birth,
-                // 'emails.[0].address':p_email,
+                'emails.0.address' : p_email,
                 'profile.p_phone': p_phone,
                 'profile.p_home': p_home,
                 'profile.p_zip': p_zip

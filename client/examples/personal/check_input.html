@@ -10,13 +10,12 @@
                 <br><input type="file" id="inp-file"/>
                 <a id="btn-save" href="#" class="btn btn-primary">업로드</a>
                 <!--  이 사진 랜덤으로 만들어야지   -->
-                <img id="btn-camera" src="examples/woman (5).png">
-
-                <!--  대표님 질문1. 이거 한개만 불러오게끔 Q2.매번 이 페이지 접속할때마 DB 리셋되게끔
-                 -->
-                {{#with contents}}
+                {{#if userInfo.profile.p_file}}
                     <img src="{{link}}" id="image_input">
-                {{/with}}
+                {{else}}
+                    <img id="btn-camera" src="examples/woman (5).png">
+                {{/if}}
+
 
             </div>
 
