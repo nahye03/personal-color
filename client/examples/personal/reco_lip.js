@@ -14,8 +14,7 @@ Template.reco_lip_info.helpers({
     },
 
     COSInfo: function() {
-
-        return DB_COSM.findAll({cm_tone: "가을 뮤트", cm_class:"lip"});
+        return DB_COSM.findAll({cm_tone: tone, cm_class:"lip"});
     },
 
 

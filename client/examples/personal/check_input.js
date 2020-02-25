@@ -20,13 +20,13 @@ Template.check_input.events({
         });
         // 저장 후 화면 정리
         alert('저장 되었습니다.');
-         $('#btn-camera').hide()
+        $('#btn-camera').hide()
     },
 
     'click #btn-check': function (evt) {
         var userInfo = Meteor.user();
         var ran_ton = Math.floor(Math.random() * 8) + 1;
-        DB_UPLOAD.remove({});
+        DB_UPLOAD.remove({_id: this._id})
         Meteor.users.update({_id: userInfo._id},{
             $set : {
                 'profile.p_ton' : ran_ton
