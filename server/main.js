@@ -790,12 +790,6 @@ Meteor.startup(function () {
         cm_class: 'shadow',
     });
     DB_COSM.insert({
-        cm_name: '에뛰드_자색고구마라떼',
-        cm_cost: '2500',
-        cm_tone: '여름 라이트',
-        cm_class: 'shadow',
-    });
-    DB_COSM.insert({
         cm_name: '크리니크_플럼팝',
         cm_cost: '25000',
         cm_tone: '여름 라이트',
