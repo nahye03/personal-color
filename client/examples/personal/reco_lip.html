@@ -19,14 +19,14 @@
                     <div class="mb-4 shadow-sm" style="height: 700px">
                         <img src="examples/cosmetics/{{cm_name}}.PNG" alt="" class="card-img-top" style="height: 500px ;margin-top: 5%">
                         <div class="card-body">
-                            <p class="card-text">{{cm_name}}</p>
+                            <p class="card-text" id="cm_name">{{cm_name}}</p>
                             <h6>가격: {{cm_cost}}</h6>
                             <div class="d-flex justify-content-between" style="align:left" >
                                 <div class="btn-group">
 <!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>-->
                                     <div class="input-group">
                                         <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                                            <option selected>선택</option>
+                                            <option value="">선택</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
