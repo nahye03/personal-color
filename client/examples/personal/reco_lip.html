@@ -5,7 +5,33 @@
 </template>
 
 <template name="reco_lip_info">
-    <div id="reco_lip_info">
-
+    <div id="reco_lip_info" align="center" style="margin-top: 5%">
+        {{#with toneInfo}}
+            <h2 class="display-4 font-weight-normal my-3"><span style="color: slateblue">"{{ton_tone}}"</span> 톤인 {{currentUser.username}} 님에게 어울리는 립제품</h2>
+        {{/with}}
     </div>
+
+    <div class="container">
+        <div class="row">
+            {{#each COSInfo}}
+                <div class="col-md-4">
+                    <div class="mb-4 shadow-sm">
+                        <img src="examples/cosmetics/{{cm_name}}.PNG" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">{{cm_name}}</p>
+                            <h6>가격: {{cm_cost}}</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">장바구니담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
+
 </template>

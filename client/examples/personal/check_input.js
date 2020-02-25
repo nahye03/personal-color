@@ -3,7 +3,7 @@ FlowRouter.template('/check_input', 'check_input');
 Template.check_input.helpers({
     contents: function () {
         // CONTENTS 데이터베이스를 화면에 전달
-        return DB_UPLOAD.findAll();
+        return DB_UPLOAD.findOne();
     },
     link: function () {
         // 저장 된 이미지 링크를 반환
@@ -15,8 +15,7 @@ Template.check_input.events({
     'click #btn-save': function (evt, inst) {
         var file = $('#inp-file').prop('files')[0];   // 화면에서 선택 된 파일 가져오기
         var file_id = DB_FILES.insertFile(file);
-        // DB 저장 시 파일의 _id와 name을 함께 저장
-        DB_UPLOAD.insert({    // 컨텐츠 DB에 저장
+        DB_UPLOAD.insert({
             file_id: file_id                // 저장 된 파일의 _id
         });
         // 저장 후 화면 정리
@@ -27,12 +26,12 @@ Template.check_input.events({
     'click #btn-check': function (evt) {
         var userInfo = Meteor.user();
         var ran_ton = Math.floor(Math.random() * 8) + 1;
-
+        DB_UPLOAD.remove({});
         Meteor.users.update({_id: userInfo._id},{
             $set : {
                 'profile.p_ton' : ran_ton
             }
-        })
+        });
     }
 
     // 'click #btn-remove': function () {

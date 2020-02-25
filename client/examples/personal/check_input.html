@@ -14,9 +14,10 @@
 
                 <!--  대표님 질문1. 이거 한개만 불러오게끔 Q2.매번 이 페이지 접속할때마 DB 리셋되게끔
                  -->
-                {{#each contents}}
+                {{#with contents}}
                     <img src="{{link}}" id="image_input">
-                {{/each}}
+                {{/with}}
+
             </div>
 
             <div class="col-md-6 explain">
@@ -36,9 +37,7 @@
                     <br><br>
                     <div style="margin-top: 5%">
                         <a href="check_main" class="button btn btn-lg bnt-design2 back">이전</a> &emsp;
-<!--                        <a href="check_result" class="button btn btn-lg bnt-design start-test">진단하기</a>-->
                         <button id="btn-check" class="button btn btn-lg bnt-design start-test" onclick="location.href='/check_result'">진단하기</button>
-
                     </div>
                 </div>
             </div>

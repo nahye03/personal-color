@@ -13,7 +13,6 @@ Meteor.startup(function () {
             }
         });
     }
-
     DB_TONE.remove({});
     DB_COSM.remove({});
     DB_TONE.insert({
