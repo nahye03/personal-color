@@ -1335,7 +1335,7 @@ Meteor.startup(function () {
         cm_class: 'shadow',
     });
     DB_COSM.insert({
-        cm_name: '샤넬_루쥬 크레용 드 꿀뢰르 6호',
+        cm_name: '샤넬_루쥬크레용 드 꿀뢰르 6호',
         cm_cost: '47500',
         cm_tone: '겨울 브라이트',
         cm_class: 'lip',
