@@ -462,12 +462,6 @@ Meteor.startup(function () {
         cm_class: 'blusher',
     });
     DB_COSM.insert({
-        cm_name: '슈에무라_강남오렌지',
-        cm_cost: '28900',
-        cm_tone: '봄 라이트',
-        cm_class: 'lip',
-    });
-    DB_COSM.insert({
         cm_name: '에뛰드_피치라떼',
         cm_cost: '2500',
         cm_tone: '봄 라이트',
@@ -491,6 +485,13 @@ Meteor.startup(function () {
         cm_tone: '봄 라이트',
         cm_class: 'lip',
     });
+    DB_COSM.insert({
+        cm_name: '슈에무라_강남오렌지',
+        cm_cost: '28900',
+        cm_tone: '봄 라이트',
+        cm_class: 'lip',
+    });
+
     //봄 브라이트
     DB_COSM.insert({
         cm_name: '네이쳐리퍼블릭_바이플라워 블러셔 자몽솜사탕',
@@ -1000,28 +1001,10 @@ Meteor.startup(function () {
         cm_class: 'shadow',
     });
     DB_COSM.insert({
-        cm_name: '맥_런웨이히트',
-        cm_cost: '26000',
-        cm_tone: '가을 뮤트',
-        cm_class: 'lip',
-    });
-    DB_COSM.insert({
-        cm_name: '맥_베가스볼트',
-        cm_cost: '26000',
-        cm_tone: '가을 뮤트',
-        cm_class: 'lip',
-    });
-    DB_COSM.insert({
         cm_name: '미샤_이탈프리즘22 메리문',
         cm_cost: '7800',
         cm_tone: '가을 뮤트',
         cm_class: 'shadow',
-    });
-    DB_COSM.insert({
-        cm_name: '나스_돌체비타',
-        cm_cost: '27000',
-        cm_tone: '가을 뮤트',
-        cm_class: 'lip',
     });
     DB_COSM.insert({
         cm_name: '입생로랑_베르니 아 레브르 12',
@@ -1054,11 +1037,30 @@ Meteor.startup(function () {
         cm_class: 'lip',
     });
     DB_COSM.insert({
+        cm_name: '맥_베가스볼트',
+        cm_cost: '26000',
+        cm_tone: '가을 뮤트',
+        cm_class: 'lip',
+    });
+    DB_COSM.insert({
+        cm_name: '나스_돌체비타',
+        cm_cost: '27000',
+        cm_tone: '가을 뮤트',
+        cm_class: 'lip',
+    });
+    DB_COSM.insert({
         cm_name: '바비브라운_프레쉬멜론',
         cm_cost: '29000',
         cm_tone: '가을 뮤트',
         cm_class: 'blusher',
     });
+    DB_COSM.insert({
+        cm_name: '맥_런웨이히트',
+        cm_cost: '26000',
+        cm_tone: '가을 뮤트',
+        cm_class: 'lip',
+    });
+
     DB_COSM.insert({
         cm_name: '베네피트_록카튜어',
         cm_cost: '32000',
@@ -1258,7 +1260,7 @@ Meteor.startup(function () {
         cm_name: '나스_오르가즘',
         cm_cost: '27000',
         cm_tone: '가을 딥',
-        cm_class: 'lip',
+        cm_class: 'blusher',
     });
     DB_COSM.insert({
         cm_name: '나스_딥쓰롯',
@@ -1281,12 +1283,6 @@ Meteor.startup(function () {
 
     //겨울 브라이트
     DB_COSM.insert({
-        cm_name: '3ce_eye switch stuck',
-        cm_cost: '15000',
-        cm_tone: '겨울 브라이트',
-        cm_class: 'shadow',
-    });
-    DB_COSM.insert({
         cm_name: '나스_나이아가라',
         cm_cost: '31000',
         cm_tone: '겨울 브라이트',
@@ -1302,7 +1298,7 @@ Meteor.startup(function () {
         cm_name: '더샘_샘물스마일 블러셔 망고피치',
         cm_cost: '4000',
         cm_tone: '겨울 브라이트',
-        cm_class: 'lip',
+        cm_class: 'blusher',
     });
     DB_COSM.insert({
         cm_name: '로라메르시에_매트 아이컬러 캐시미어',
@@ -1331,6 +1327,12 @@ Meteor.startup(function () {
     DB_COSM.insert({
         cm_name: '베네피트_록카튜어',
         cm_cost: '32000',
+        cm_tone: '겨울 브라이트',
+        cm_class: 'blusher',
+    });
+    DB_COSM.insert({
+        cm_name: '3ce_eye switch stuck',
+        cm_cost: '15000',
         cm_tone: '겨울 브라이트',
         cm_class: 'shadow',
     });
@@ -1401,19 +1403,13 @@ Meteor.startup(function () {
         cm_name: '나스_섹스어필',
         cm_cost: '26000',
         cm_tone: '겨울 딥',
-        cm_class: 'shadow',
+        cm_class: 'blusher',
     });
     DB_COSM.insert({
         cm_name: '나스_드래곤걸',
         cm_cost: '26000',
         cm_tone: '겨울 딥',
         cm_class: 'lip',
-    });
-    DB_COSM.insert({
-        cm_name: '마몽드_스틱섀도우 크리미 아이컬러밤 2호 써니글로우',
-        cm_cost: '4400',
-        cm_tone: '겨울 딥',
-        cm_class: 'shadow',
     });
     DB_COSM.insert({
         cm_name: '맥_디바',
@@ -1466,6 +1462,12 @@ Meteor.startup(function () {
     DB_COSM.insert({
         cm_name: '맥_fog and mist',
         cm_cost: '51000',
+        cm_tone: '겨울 딥',
+        cm_class: 'shadow',
+    });
+    DB_COSM.insert({
+        cm_name: '마몽드_스틱섀도우 크리미 아이컬러밤 2호 써니글로우',
+        cm_cost: '4400',
         cm_tone: '겨울 딥',
         cm_class: 'shadow',
     });

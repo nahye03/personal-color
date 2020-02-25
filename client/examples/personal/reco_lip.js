@@ -30,32 +30,29 @@ Template.reco_lip_info.helpers({
         return DB_COSM.findAll({cm_tone:tonename, cm_class:"lip"});
     },
 
-    UserInfo:function() {
-        return Meteor.users.findOne({id:Meteor.user()._id})
-    }
+    // userInfo:function() {
+    //     return Meteor.users.findOne({id:Meteor.user()._id})
+    // }
 });
 
-Template.mypage_info.events({
-    'click #btn-addcart' : function () {
-
+Template.reco_lip_info.events({
+    'click #btn_addcartOne' : function () {
+        // var tonename = Session.get('tonename');
         var userInfo = Meteor.user();
-        var username = $('#username').val();
-        var p_name = $('#p_name').val();
-        var p_birth = $('#p_birth').val();
-        var p_email = $('#email').val();
-        alert('장바구니에 담겼습니다.');
+        var cos_cnt = $('#inputGroupSelect04').val();
+        var cos_name = $('.card-text').text().split("\n")[0];
+        var cos_image = $('.card-image-top').val();
+        // var cos_name = DM_COSM.findOne({cm_class:"lip" , cm_tone:tonename})[0].cm_name;
 
-        // Meteor.users.update({_id: userInfo._id}, {
-        //     $set: { // 사용자 객체의 profile 프로퍼티는 사용자 기타 정보를 저장 하는 공통 된 위치 입니다.
-        //         'username': username,
-        //         'profile.p_name': p_name,
-        //         'profile.p_birth': p_birth,
-        //         'emails.0.address' : p_email,
-        //         'profile.p_phone': p_phone,
-        //         'profile.p_home': p_home,
-        //         'profile.p_zip': p_zip
-        //     }
-        // });
+
+
+        Meteor.users.update({_id: userInfo._id}, {
+            $set: { // 사용자 객체의 profile 프로퍼티는 사용자 기타 정보를 저장 하는 공통 된 위치 입니다.
+                'cart.cos.name': cos_name,
+                'cart.cos.cnt': cos_cnt,
+            }
+        });
+        alert("장바구니에 추가되었습니다");
     },
 });
 
