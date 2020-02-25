@@ -29,5 +29,4 @@ Template.reco_lip_info.helpers({
         return DB_COSM.findAll({cm_tone:tonename, cm_class:"lip"});
     }
 
-
 });
