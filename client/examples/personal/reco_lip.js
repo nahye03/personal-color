@@ -24,6 +24,7 @@ Template.reco_lip_info.helpers({
         return DB_COSM.findAll({cm_tone:tonename, cm_class:"lip"});
     },
 
+
     // userInfo:function() {
     //     return Meteor.users.findOne({id:Meteor.user()._id})
     // }

@@ -5,10 +5,12 @@
 </template>
 
 <template name="reco_lip_info" >
-    <div id="reco_lip_info" style="margin-top: 5%; text-align:center" >
+    <div id="reco_lip_info" style="margin-top: 5%; text-align:center" class="mx-5 px-3">
         {{#with toneInfo}}
-            <h2 class="display-4 font-weight-normal my-3"><span style="color: slateblue ">"{{ton_tone}}"</span>
-                톤인 {{currentUser.username}} 님에게 어울리는 립제품</h2>
+            <div id="ton-img" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+                <h2 class="display-4 font-weight-normal my-3"><span style="color: slateblue ">"{{ton_tone}}"</span>
+                    톤인 {{currentUser.username}} 님에게 어울리는 립제품</h2>
+            </div>
         {{/with}}
     </div>
 
@@ -26,7 +28,7 @@
 <!--                                    <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>-->
                                     <div class="input-group">
                                         <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                                            <option value="">선택</option>
+                                            <option selected>선택</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
